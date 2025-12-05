@@ -16,6 +16,13 @@ cd UniSplicer
 conda env create -f environment.yml
 conda activate unisplicer   # or the environment name generated
 ```
+Install ASTool which is required for alternative splicing related preprocessing
+Dependence:
+Perl,SRA Toolkit, STAR
+
+```bash
+git clone https://github.com/zzd-lab/ASTool.git
+```
 
 ## Workflow
 ### Step 1 Training Data Preparation
