@@ -22,7 +22,7 @@ For the detailed installation process, please refer to
 https://github.com/zzd-lab/ASTool
 
 
-## Workflow (The required data structure is listed in each .ipynb file.)
+## Workflow
 
 ### Step 1. Training Data Preparation
 
