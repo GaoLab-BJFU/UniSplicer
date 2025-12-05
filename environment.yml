@@ -1,0 +1,37 @@
+name: pytorch-2-4-cuda-12-4-env
+channels:
+  - pytorch
+  - nvidia
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  - pip
+  - ca-certificates
+  - certifi
+  - openssl
+  - zlib
+
+  - jupyter
+
+  - pytorch=2.4
+  - torchvision=0.19
+  - torchaudio=2.4
+  - pytorch-cuda=12.4
+
+  - wget
+  - unzip
+
+  - samtools=1.17
+  - sra-tools=3.2.0
+  - star=2.7.10a
+  - trimmomatic=0.39
+
+  - pip:
+      - biopython==1.85
+      - intervaltree==3.1.0
+      - matplotlib==3.10.1
+      - pandas==2.2.3
+      - tqdm==4.67.1
