@@ -14,7 +14,7 @@ Clone the repository and create the conda environment:
 git clone https://github.com/GaoLab-BJFU/UniSplicer.git
 cd UniSplicer
 conda env create -f environment.yml
-conda activate unisplicer   # or the environment name generated
+conda activate unisplicer
 ```
 
 Install ASTool which is required for alternative splicing related preprocessing
@@ -25,37 +25,35 @@ https://github.com/zzd-lab/ASTool
 ## Workflow
 ### Step 1 Training Data Preparation
 
-Extract genomic regions and reference splice sites from genome and annotation files.
+Extract intron splice sites detected by RNA-seq.
 
 ### Step 2 Generate Training Data
 
-Two pathways are provided
-GCF dataset processing
-GCA dataset processing with an included example
-Both produce formatted donor and acceptor training datasets.
+Two example codes are provided:
+GCF dataset processing code,
+GCA dataset processing code
 
 ### Step 3 Model Training
 
 Run the training script
 ```bash
-python Step3_UniSplicer_model_training_source_code.py --species Arabidopsis_thaliana --batchsize 32 --cnn_hidden_unit 60 --lstm_hidden_unit 60 --lstm_layer_num 3 --window_context 600 --epoch_number 10 --lr_rate 1e-3 --lossweight 10.0&
+python Step3_UniSplicer_model_training_source_code.py --species Arabidopsis_thaliana --batchsize 32 --cnn_hidden_unit 60 --lstm_hidden_unit 60 --lstm_layer_num 3 --window_context 600 --epoch_number 10 --lr_rate 1e-3 --lossweight 10.0
 ```
 
 ### Step 4 Model Evaluation
 Compute Top K accuracy using the evaluation notebook.
-Supports cross species evaluation and mutation effect scoring.
 
 ## Usage Notes
 
-UniSplicer can be used for
+UniSplicer can be used for:
 
-Splice site prediction
+(1) Splice site prediction,
 
-Analysis of splice altering mutations
+(2) Analysis of splice altering mutations,
 
-Training custom models for new species
+(3) Training custom models for new species,
 
-Comparative genomics and evolutionary studies
+(4) Comparative genomics and evolutionary studies.
 
 
 ## Citation
@@ -64,7 +62,7 @@ If you use this software, pipeline, or trained models for academic research or p
 
 Conghao Hong, Wenzhen Cheng, Zhengyi Li, Jiajie Deng, Yiqiong Li, Youyi Zang, and Hongbo Gao. "UniSplicer deep learning models across diverse taxa for highly accurate intron splice site prediction and splice altering mutation detection" In press 2025
 
-## License and Usage Policy
+## License and Usage
 
 This software is free for academic research use and personal use.
 Commercial use is not permitted.
