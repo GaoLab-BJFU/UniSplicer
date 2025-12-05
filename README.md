@@ -24,17 +24,17 @@ https://github.com/zzd-lab/ASTool
 
 ## Workflow (The required data structure is listed in each .ipynb file.)
 
-### Step 1 Training Data Preparation
+### Step 1. Training Data Preparation
 
 Extract intron splice sites detected by RNA-seq.
 
-### Step 2 Generate Training Data
+### Step 2. Generate Training Data
 
 Two example codes are provided:
 GCF dataset processing code,
 GCA dataset processing code
 
-### Step 3 Model Training
+### Step 3. Model Training
 
 Run the training script
 ```bash
@@ -46,8 +46,9 @@ make sure you have the base UniSplicer models first, and then add the transfer l
 ```bash
 python Step3_UniSplicer_model_training_source_code.py --species Rosa_chinensis --batchsize 32 --cnn_hidden_unit 60 --lstm_hidden_unit 60 --lstm_layer_num 3 --window_context 600 --epoch_number 10 --lr_rate 1e-3 --lossweight 10.0 --enable_transfer_learning
 ```
-### Step 4 Model Evaluation
-Compute Top K accuracy using the evaluation notebook.
+
+### Step 4. Model Evaluation
+Compute Top-K accuracy using the evaluation notebook.
 
 
 ## Usage Notes
