@@ -22,7 +22,8 @@ For the detailed installation process, please refer to
 https://github.com/zzd-lab/ASTool
 
 
-## Workflow
+## Workflow (The required data structure is listed in each .ipynb file.)
+
 ### Step 1 Training Data Preparation
 
 Extract intron splice sites detected by RNA-seq.
@@ -42,6 +43,7 @@ python Step3_UniSplicer_model_training_source_code.py --species Arabidopsis_thal
 
 ### Step 4 Model Evaluation
 Compute Top K accuracy using the evaluation notebook.
+
 
 ## Usage Notes
 
