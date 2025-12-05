@@ -63,6 +63,9 @@ UniSplicer can be used for:
 
 (4) Comparative genomics and evolutionary studies.
 
+We have uploaded the pretrained models in the folder data/pretrained_model. Users can directly use these models for prediction without retraining.  
+
+We also provide an online web service for UniSplicer at www.unisplicer.com
 
 ## Citation
 
