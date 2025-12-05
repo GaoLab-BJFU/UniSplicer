@@ -1,4 +1,4 @@
-name: UniSplicer
+name: uniSplicer
 channels:
   - pytorch
   - nvidia
@@ -35,4 +35,5 @@ dependencies:
       - matplotlib==3.10.1
       - pandas==2.2.3
       - tqdm==4.67.1
+
 
