@@ -40,7 +40,12 @@ Run the training script
 ```bash
 python Step3_UniSplicer_model_training_source_code.py --species Arabidopsis_thaliana --batchsize 32 --cnn_hidden_unit 60 --lstm_hidden_unit 60 --lstm_layer_num 3 --window_context 600 --epoch_number 10 --lr_rate 1e-3 --lossweight 10.0
 ```
+If you are using transfer learning:
 
+make sure you have the base UniSplicer models first, and then add the transfer learning flag:"--enable_transfer_learning"
+```bash
+python Step3_UniSplicer_model_training_source_code.py --species Rosa_chinensis --batchsize 32 --cnn_hidden_unit 60 --lstm_hidden_unit 60 --lstm_layer_num 3 --window_context 600 --epoch_number 10 --lr_rate 1e-3 --lossweight 10.0 --enable_transfer_learning
+```
 ### Step 4 Model Evaluation
 Compute Top K accuracy using the evaluation notebook.
 
