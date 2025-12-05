@@ -1,4 +1,4 @@
-name: pytorch-2-4-cuda-12-4-env
+name: UniSplicer
 channels:
   - pytorch
   - nvidia
@@ -35,3 +35,4 @@ dependencies:
       - matplotlib==3.10.1
       - pandas==2.2.3
       - tqdm==4.67.1
+
