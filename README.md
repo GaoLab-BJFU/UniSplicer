@@ -71,7 +71,7 @@ We also provide an online web service for UniSplicer at www.unisplicer.com
 
 If you use this software, pipeline, or trained models for academic research or publications, please cite the following paper:
 
-Conghao Hong, Wenzhen Cheng, Zhengyi Li, Jiajie Deng, Yiqiong Li, Youyi Zang, and Hongbo Gao. "UniSplicer deep learning models across diverse taxa for highly accurate intron splice site prediction and splice altering mutation detection" _Plant Communications_ 2025
+Conghao Hong, Wenzhen Cheng, Zhengyi Li, Jiajie Deng, Yiqiong Li, Youyi Zang, and Hongbo Gao (2026). UniSplicer: A deep-learning framework for accurate splice-site prediction and splice-altering mutation detection across diverse taxa. _Plant Comm_. 7, 101686.
 
 ## License and Usage
 
